@@ -1,0 +1,1 @@
+sqlite> SELECT genre FROM genres WHERE show_id=(SELECT show_id FROM stars WHERE person_id=(SELECT id FROM people WHERE name LIKE "%Robert Downey Jr.%"));
